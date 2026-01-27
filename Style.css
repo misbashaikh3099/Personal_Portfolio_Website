@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #333;
+}
+
+nav h2 {
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #00adb5;
+}
+
+#themeBtn {
+  cursor: pointer;
+}
+
+/* Common Section */
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+/* About Section */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 20%;
+  border: 2px solid #000;
+}
+
+body.dark .profile-pic {
+  border-color: #fff;
+}
+
+.about-text {
+  max-width: 650px;
+}
+
+.about-text p {
+  line-height: 1.8;
+}
+
+.animated-text {
+  font-size: 20px;
+  animation: fade 2s infinite;
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Projects Section */
+#projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: left;
+}
+
+#projects h2 {
+  grid-column: 1 / -1;
+}
+
+.project {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-6px);
+}
+
+body.dark .project {
+  background: #1e1e1e;
+}
+
+/* Achievements Section */
+#achievements {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: left;
+}
+
+#achievements h2 {
+  grid-column: 1 / -1;
+}
+
+.achievement {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+body.dark .achievement {
+  background: #1e1e1e;
+}
+
+body.dark .achievement:hover {
+  box-shadow: 0 8px 18px rgba(255, 255, 255, 0.08);
+}
+
+/* Contact Section */
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+body.dark .contact-form {
+  background: #1e1e1e;
+}
+
+.contact-form label {
+  font-weight: 500;
+  margin-top: 12px;
+  display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #00adb5;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  background: #00adb5;
+  transform: translateY(-2px);
+}
+
+/* Social Links */
+.social {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.social a {
+  margin: 0 20px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.social a:hover {
+  text-decoration: underline;
+}
+
+body.dark .social a {
+  color: #fff;
+}
