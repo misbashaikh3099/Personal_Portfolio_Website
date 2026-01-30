@@ -1,12 +1,12 @@
 const themeBtn = document.getElementById("themeBtn");
 
-// Check saved theme
+
 if (localStorage.getItem("theme") === "dark") {
   document.body.classList.add("dark");
   themeBtn.textContent = "☀️";
 }
 
-// Toggle Theme
+
 themeBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark");
 
@@ -17,4 +17,13 @@ themeBtn.addEventListener("click", () => {
     localStorage.setItem("theme", "light");
     themeBtn.textContent = "🌙";
   }
+});
+const contactForm = document.querySelector(".contact-form");
+
+contactForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  alert("✅ Message sent successfully!");
+
+  contactForm.reset(); 
 });

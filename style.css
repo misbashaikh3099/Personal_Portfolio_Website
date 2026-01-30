@@ -11,7 +11,7 @@ body.dark {
   color: #ffffff;
 }
 
-/* Navbar */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -43,13 +43,13 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-/* Common Section */
+
 section {
   padding: 50px;
   text-align: center;
 }
 
-/* About Section */
+
 .about-container {
   display: flex;
   flex-direction: column;
@@ -89,7 +89,7 @@ body.dark .profile-pic {
   100% { opacity: 0; }
 }
 
-/* Projects Section */
+
 #projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -118,7 +118,7 @@ body.dark .project {
   background: #1e1e1e;
 }
 
-/* Achievements Section */
+
 #achievements {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -152,7 +152,7 @@ body.dark .achievement:hover {
   box-shadow: 0 8px 18px rgba(255, 255, 255, 0.08);
 }
 
-/* Contact Section */
+
 .contact-form {
   max-width: 600px;
   margin: auto;
@@ -206,7 +206,7 @@ body.dark .contact-form {
   transform: translateY(-2px);
 }
 
-/* Social Links */
+
 .social {
   margin-top: 40px;
   text-align: center;
